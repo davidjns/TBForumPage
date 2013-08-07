@@ -9,7 +9,7 @@ namespace TBForumPage.Models
 	public class ThreadContext : DbContext
 	{
 		public ThreadContext()
-			: base("TBForumPage")
+			: base("TBForum")
 		{
 		}
 		public DbSet<Category> Categories { get; set; }

@@ -34,32 +34,32 @@ namespace TBForumPage.Models
 
         private static List<Thread> GetThreads()
         {
-			var threads = new List<Thread>();
-
-			//TODO: add code to populate forum from server?
-			
-			//TEMPLATE FROM TUTORIAL EXAMPLE
-			//var threads = new List<Thread> {
-			//	new Thread
-			//	{
-			//		ThreadID = 1,
-			//		ThreadName = "Convertible Car",
-			//		Description = "This convertible car is fast! The engine is powered by a neutrino based battery (not included)." + 
-			//					  "Power it up and let it go!", 
-			//		ImagePath="carconvert.png",
-			//		UnitPrice = 22.50,
-			//		CategoryID = 1
-			//   },
-			//	new Thread 
-			//	{
-			//		ProductID = 2,
-			//		ProductName = "Old-time Car",
-			//		Description = "There's nothing old about this toy car, except it's looks. Compatible with other old toy cars.",
-			//		ImagePath="carearly.png",
-			//		UnitPrice = 15.95,
-			//		 CategoryID = 1
-			//   }
-			//};
+			var threads = new List<Thread> {
+				new Thread
+				{
+					ThreadID = 1,
+					ThreadName = "Test thread",
+					MainBody = "Here is the body of this test thread. It has words and stuff in it!",
+					ImagePath = "BearPaw.jpg",
+					CategoryID = 1
+			   },
+			   new Thread
+				{
+					ThreadID = 2,
+					ThreadName = "Test thread a",
+					MainBody = "Here is the body of this test thread. It has words and stuff in it!",
+					ImagePath = "BearPaw.jpg",
+					CategoryID = 1
+			   },
+			   new Thread
+				{
+					ThreadID = 3,
+					ThreadName = "Test thread2",
+					MainBody = "Here is the body of this test thread. It has words and stuff in it!",
+					ImagePath = "BearPaw.jpg",
+					CategoryID = 2
+			   }
+			};
 
             return threads;
         }
